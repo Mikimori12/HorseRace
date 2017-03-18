@@ -1,0 +1,55 @@
+
+<html>
+<head>
+<title>競馬レースシミュレータ</title>
+<meta charset="UTF-8">
+
+<!-- default -->
+<link href="lib/jm.default.css" rel="stylesheet" />
+<script src="lib/jquery.min.js" type="text/javascript"></script>
+<script src="lib/jm.SNSG_88_data_default.js" type="text/javascript"></script>
+<script src="lib/jm.SNSG_99_data_horse.js" type="text/javascript"></script>
+<script src="lib/jm.SNSG_99_data_announce.js" type="text/javascript"></script>
+<script src="lib/jm.SNSG_10_canvas.js" type="text/javascript"></script>
+<script src="lib/jm.SNSG_01_race.js" type="text/javascript"></script>
+
+<script>
+    $(document).ready(function () {
+        $(document).SNSG_controler();
+    });
+</script>
+
+</head>
+<body>
+<div class="contentsBox">
+
+	<div id="raceComent"></div>
+
+	<div class="mainBox" id="umaRace">
+	<table><tr>
+		<td>
+		<table class="LapData" id="horseInfo">
+		<thead></thead>
+		<tbody></tbody>
+		</table>
+		</td>
+		<td>
+		<div id="raceField"></div>
+		</td>
+	</tr></table>
+	<table id="operateBtn"><tr>
+		<td><div class="actSel">アクション選択</div></td>
+		<td><div id="opeBtn" class="MNT">控え</div></td>
+		<td><div id="opeBtn" class="HUP">追い</div></td>
+		<td><div id="opeBtn" class="SKL">スキル</div></td>
+	</tr></table>
+	</div>
+
+	<p>50mごとのラップタイムを表示します。</p>
+	<table class="LapData" id="dataLap">
+	<thead></thead>
+	<tbody></tbody>
+	</table>
+
+</div>
+<body>
