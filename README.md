@@ -1,4 +1,6 @@
 # HorseRace
-javascriptによる馬レースシミュレーターです。jQueryとcanvasを使用しています。  
-race_simurate.html  
-  →lib/  
+javascriptによる馬レースシミュレーターです。jQueryとcanvasを使用しています。  
+「race_simurate.html」と「libフォルダ」をローカルに保存してhtmlを開いて貰えれば動きます。  
+外部データの読み込みはありません。  
+起動後、「アクション選択ボタン」を押すと50mごとのラップタイムが算出されて200mずつ進んでいきます。  
+先頭でゴールすれば勝利です。  
